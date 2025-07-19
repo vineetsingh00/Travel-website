@@ -10,17 +10,17 @@ const serviceData = [
   {
     imgUrl: weatherImg,
     title: "Calculate Weather",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    desc: "Smart forecasts for weather clarity and convenience.",
   },
   {
     imgUrl: guideImg,
     title: "Best Tour Guide",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    desc: "Expert travel tips with personalized tour planning magic.",
   },
   {
     imgUrl: customizationImg,
     title: "Customization",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    desc: "Tailored experiences crafted with precision and style.",
   },
 ];
 

@@ -1,12 +1,14 @@
-# Travel World Website
+# Lets Travel Website
 
-Welcome to my Travel World Website a fully-functional Travelling website exactly like amazon. Open your code editor and follow me for the next hours to build an e-commerce website using MERN stack (MongoDB, ExpressJS, React and Node.JS).
+Welcome to my Lets Travel World Website a fully-functional Travelling website exactly like amazon. Open your code editor and follow me for the next hours to build an e-commerce website using MERN stack (MongoDB, ExpressJS, React and Node.JS).
 
 ![Travel](/frontend/src/images/travel1.png)
 ![Travel](/frontend/src/images/travel2.png)
 ![Travel](/frontend/src/images/travel3.png)
 ![Travel](/frontend/src/images/travel4.png)
 ![Travel](/frontend/src/images/travel5.png)
+![Travel](/frontend/src/images/travel6.png)
+![Travel](/frontend/src/images/travel7.png)
 
 
 
@@ -15,7 +17,7 @@ Welcome to my Travel World Website a fully-functional Travelling website exactly
 ### 1. Clone repo
 
 ```
-$ git clone https://github.com/harisshafi0902/Mern-Travelling-Website.git
+$ git clone https://github.com/vineetsingh00/Travel-website.git
 ```
 
 ### 2. Create .env File
