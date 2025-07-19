@@ -11,7 +11,7 @@ import experienceImg from "../assets/images/experience.png";
 import Subtitle from "./../shared/Subtitle";
 
 import ServiceList from "../services/ServiceList";
-import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
+// import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
 import MasonaryImages from "../components/Image-gallery/MasonaryImages";
 
 const Home = () => {
@@ -31,11 +31,9 @@ const Home = () => {
                   <span className="highlight">memories</span>
                 </h1>
                 <p>
-                  lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-                  ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem
-                  ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsum lorem
-                  ipsumlorem ipsumlor
-                </p>
+                ✨ Traveling isn't just about reaching destinations—it's about collecting unforgettable moments,
+                 meeting new faces, and turning ordinary days into lifelong stories.
+                 </p>
               </div>
             </Col>
             <Col lg="2">
@@ -54,7 +52,7 @@ const Home = () => {
               </div>
             </Col>
 
-            {/* <SearchBar /> */}
+            {/* <SearchBar />*/ }
           </Row>
         </Container>
       </section>
@@ -71,7 +69,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section>
+      {/* <section>
         <Container>
           <Row>
             <Col lg="12" className="mb-5">
@@ -81,7 +79,7 @@ const Home = () => {
             <FeaturedTourList />
           </Row>
         </Container>
-      </section>
+      </section> */}
 
       <section>
         <Container>
@@ -94,8 +92,8 @@ const Home = () => {
                   With our all experience <br /> we will serve you
                 </h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit <br />
-                  sed do eiusmod tempor incididunt ut
+                  ✨ Backed by years of expertise and dedication, we’re here to deliver exceptional 
+                  service tailored to your needs—where experience meets excellence.
                 </p>
               </div>
 

@@ -7,9 +7,9 @@ import useFetch from "../hooks/useFetch";
 import { BASE_URL } from "../utils/config";
 
 const TourDetails = () => {
-  const { _id } = useParams();
+  const { id } = useParams();
 
-  const { data: tour, loading, error } = useFetch(`${BASE_URL}/tours/${_id}`);
+  const { data: tour, loading, error } = useFetch(`${BASE_URL}/tours/${id}`);
 
   const { photo, title, desc, price, address, city, distance, maxGroupSize } =
     tour;

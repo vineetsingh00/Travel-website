@@ -47,7 +47,7 @@ export const login = async (req, res) => {
       { expiresIn: "15d" }
     );
 
-    //set token to browser cookies and send response to client
+    // Set token to browser cookies and send response to client
     res
       .cookie("accessToken", token, {
         httpOnly: true,
@@ -55,6 +55,8 @@ export const login = async (req, res) => {
       })
       .status(200)
       .json({
+        success: true,
+        message: "Successfully Logged In",
         token,
         data: { ...rest },
         role,

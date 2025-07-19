@@ -1,3 +1,4 @@
+// index.js
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
@@ -7,17 +8,17 @@ import cookieParser from "cookie-parser";
 import tourRoute from "./routers/tour.js";
 import userRoute from "./routers/user.js";
 import authRoute from "./routers/auth.js";
-import bookingRoute from "./routers/booking.js";
+import bookingRoute from "./routers/booking.js"; // ✅ Make sure this path is correct
 
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 8000;
+
 const corsOptions = {
-  origin: true,
+  origin: "http://localhost:3000",
   credentials: true,
 };
 
-//database connection
 mongoose.set("strictQuery", false);
 const connect = async () => {
   try {
@@ -25,23 +26,39 @@ const connect = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-
-    console.log("MongoDB database connected");
-  } catch (error) {
-    console.log("MongoDB database connection failed");
+    console.log("MongoDB connected");
+  } catch (err) {
+    console.log("MongoDB connection failed:", err);
   }
 };
 
-//middleware
-app.use(express.json());
+// Middleware
 app.use(cors(corsOptions));
+app.use(express.json());
 app.use(cookieParser());
+
+// Debug logger
+app.use((req, res, next) => {
+  console.log(`[${req.method}] ${req.originalUrl}`);
+  next();
+});
+
+// Routes
 app.use("/tours", tourRoute);
 app.use("/users", userRoute);
 app.use("/auth", authRoute);
 app.use("/book", bookingRoute);
 
+// 404 fallback handler
+app.use((req, res) => {
+  res.status(404).json({
+    success: false,
+    message: `API route not found: ${req.originalUrl}`,
+  });
+});
+
+// Start server
 app.listen(port, () => {
   connect();
-  console.log("server listening on port", port);
+  console.log(`Server running on port ${port}`);
 });

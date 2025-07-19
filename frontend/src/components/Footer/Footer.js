@@ -40,7 +40,7 @@ const Footer = () => {
           <Col lg="3">
             <div className="logo">
               <img src={logo} alt="" />
-              <p>Lorem ipsum dolor sit amet, consectetur</p>
+              <p>Adventure awaits—start your global journey today.</p>
               <div className="social-links d-flex align-items-center gap-4">
                 <span>
                   <Link to="#">
@@ -48,7 +48,7 @@ const Footer = () => {
                   </Link>
                 </span>
                 <span>
-                  <Link to="#">
+                  <Link to="https://www.instagram.com/er_vineet/">
                     <i class="ri-instagram-line"></i>{" "}
                   </Link>
                 </span>
@@ -90,7 +90,7 @@ const Footer = () => {
                   </span>
                   Address
                 </h6>
-                <p className="mb-0">Islamabad, Pakistan</p>
+                <p className="mb-0">Moradabad, India </p>
               </ListGroupItem>
               <ListGroupItem className="ps-0 border-0 align-items-center gap-3">
                 <h6 className="mb-0 d-flex align-items-center gap-2">
@@ -99,7 +99,7 @@ const Footer = () => {
                   </span>
                   Email:
                 </h6>
-                <p className="mb-0">Haris.shafi@gmail.com</p>
+                <a className="mb-0" href="mailto:singhvineet00111@gmail.com">singhvineet00111@gmail.com</a>
               </ListGroupItem>
               <ListGroupItem className="ps-0 border-0 align-items-center gap-3">
                 <h6 className="mb-0 d-flex align-items-center gap-2">
@@ -108,7 +108,7 @@ const Footer = () => {
                   </span>
                   Phone:
                 </h6>
-                <p className="mb-0">+92-304-0202020</p>
+                <a className="mb-0" href="tel:+919027818676">+91 90278 18676</a>
               </ListGroupItem>
             </ListGroup>
           </Col>

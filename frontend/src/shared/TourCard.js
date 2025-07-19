@@ -1,16 +1,26 @@
 import React from "react";
 import { Card, CardBody } from "reactstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import "./tour-card.css";
 
 const TourCard = ({ tour }) => {
+  const navigate = useNavigate();
   const { _id, title, city, photo, price, featured } = tour;
+
+  const handleRedirect = () => {
+    if(localStorage.getItem("user")) {
+      navigate(`/tours/${_id}`);
+    } else {
+      alert("Login First");
+    }
+  }
+
   return (
     <div className="tour-card">
       <Card>
         <div className="tour-img">
-          <img src={photo} alt="tour-img" />
+          <img src={photo} alt={photo} />
           {featured && <span>Featured</span>}
         </div>
 
@@ -33,8 +43,8 @@ const TourCard = ({ tour }) => {
             <h5>
               ${price} <span>/per person</span>
             </h5>
-            <button className="btn booking-btn">
-              <Link to={`/tours/${_id}`}>Book Now</Link>
+            <button onClick={handleRedirect} className="btn booking-btn">
+              <span>Book Now</span>
             </button>
           </div>
         </CardBody>
