@@ -43,18 +43,18 @@ const Footer = () => {
               <p>Adventure awaits—start your global journey today.</p>
               <div className="social-links d-flex align-items-center gap-4">
                 <span>
-                  <Link to="#">
+                  <Link to="https://github.com/vineetsingh00/Travel-website">
                     <i class="ri-github-fill"></i>
                   </Link>
                 </span>
                 <span>
-                  <Link to="https://www.instagram.com/er_vineet/">
+                  <Link to="#">
                     <i class="ri-instagram-line"></i>{" "}
                   </Link>
                 </span>
                 <span>
-                  <Link to="#">
-                    <i class="ri-facebook-circle-fill"></i>{" "}
+                  <Link to="https://www.linkedin.com/in/vineet-singh21/">
+                    <i class="ri-linkedin-box-fill"></i>{" "}
                   </Link>
                 </span>
               </div>
