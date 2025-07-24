@@ -58,7 +58,7 @@ app.use((req, res) => {
 });
 
 // Start server
-app.listen(port, () => {
+app.listen(port,() => {
   connect();
   console.log(`Server running on port ${port}`);
 });
