@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
 import "../styles/tour-details.css";
-import { Container, Row, Col, Form, ListGroup } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import { useParams } from "react-router-dom";
 import Booking from "../components/Booking/booking";
 import useFetch from "../hooks/useFetch";
@@ -9,9 +8,13 @@ import { BASE_URL } from "../utils/config";
 const TourDetails = () => {
   const { id } = useParams();
 
-  const { data: tour, loading, error } = useFetch(`${BASE_URL}/tours/${id}`);
+  // const { data: tour, loading, error } = useFetch(`${BASE_URL}/tours/${id}`);
 
-  const { photo, title, desc, price, address, city, distance, maxGroupSize } =
+  // const { photo, title, desc, price, address, city, distance, maxGroupSize } =
+
+  const { data: tour } = useFetch(`${BASE_URL}/tours/${id}`);
+
+  const { photo, title, price, address, city, maxGroupSize } =
     tour;
 
   return (
